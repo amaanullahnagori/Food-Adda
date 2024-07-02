@@ -1,0 +1,19 @@
+{
+  "name": "foodadda",
+  "version": "1.0.0",
+  "description": "The Utimate food app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Amaan",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

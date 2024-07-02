@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  border: 1px solid #000;
+  width: 5vw;
+  height: 10vh;
+}
+
+.logo > img {
+  border: .01rem solid #000;
+  border-radius: .11rem;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  border-bottom: .09rem solid #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  padding: 2rem;
+  display: flex;
+}
+
+#nav {
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.5vw;
+  display: flex;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card {
+  border: .1rem solid #101010;
+  border-radius: 1rem;
+  width: 12vw;
+  height: 40vh;
+  padding: .8rem;
+}
+
+.bottom_card {
+  width: 100%;
+  height: 40%;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.card:hover {
+  transition: all step-end;
+  transform: scale(.95);
+  box-shadow: .15rem .15rem #514f4f;
+}
+
+.card_image > img {
+  border: .01rem solid #000;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.body_card {
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.body_main {
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.search_bar {
+  justify-content: center;
+  display: flex;
+}
+
+.card_image {
+  width: 100%;
+  height: 60%;
+}
+
+#bar {
+  width: 35vw;
+  height: 5vh;
+}
+
+.button_searchBar {
+  background-color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.search_bar {
+  gap: 1rem;
+}
+
+#button_searchBar {
+  border-radius: .8rem;
+  width: 6vw;
+}
+
+#bar {
+  border-radius: .8rem;
+  padding: .8rem;
+}
+
+#login_logout {
+  color: #fff;
+  background-color: #000;
+  border-radius: .5rem;
+  width: 4vw;
+  height: 5.5vh;
+}
+
+.footer {
+  background-color: #000;
+  width: 100vw;
+  height: 20vh;
+  padding: 2rem;
+}
+
+.footer > h1, .footer > h3 {
+  color: #fff;
+}
+
+#amaan {
+  color: red;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
