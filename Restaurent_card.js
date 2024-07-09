@@ -7,7 +7,7 @@ const Rest_card=(props)=>
             <>
                <div className="card">
                <div className="card_image">
-<img  src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/"+id}  alt="Restaurent">
+   <img  src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/"+id}  alt="Restaurent">
                </img>
                </div>
                <div className="bottom_card">

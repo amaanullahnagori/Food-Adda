@@ -4,15 +4,9 @@ import HD from "./header.js"
 import Body from "./body.js";
 import { jsondata } from "./Restaurant_list.js";
 import Foot from "./footer.js";
-//three Section 
-
-// header 
-   //- img
-   // -navigation
-// body 
-// footer
-
-// const h=HD;
+import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
+import Menu from "./menu";
 
 const Applayout=()=>{
  
@@ -26,9 +20,18 @@ const Applayout=()=>{
               </>
     )
 }
-
+const br=createBrowserRouter([{
+    path :"/",
+    element:<Applayout/>
+},{
+    path :"/res/:i/:id",
+    element:<Menu/>
+}
+, { path :"/res/:id",
+element:<Menu/>}]
+)
 const root=ReactDom.createRoot(document.getElementById("r"));
-root.render(<Applayout/>);
+root.render(<RouterProvider router={br}/>);
 
 
 

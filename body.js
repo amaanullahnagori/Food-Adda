@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Rest_card from "./Restaurent_card";
  import restrautList from "./RestaurentList";
+import { Link } from "react-router-dom";
  
  const toggle =false ;
  function filterdata(value){
@@ -54,7 +55,6 @@ const Body=()=>{
           }></input>
          <button id="button_searchBar"  onClick={()=>{
               const dataa = filterdata(search_value);
-            
             setsearchrestaurentList(dataa);
          }
                  }>Search</button>
@@ -65,7 +65,8 @@ const Body=()=>{
           { 
 
          searchrestaurentList .map((e) => {
-               return <Rest_card  res={e} />
+                 const id=e.data.id;
+               return <Link to={"res/"+id}><Rest_card key={id} res={e} /></Link>
           })}
        </div>
        </div>
