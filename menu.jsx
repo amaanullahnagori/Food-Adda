@@ -5,7 +5,6 @@ import Shimmer from "./shimmer"
 const Menu=()=>{
 const {id}=useParams(); 
 const[menu ,setmenu]=useState([]);
-
 useEffect(()=>{
 callmenu()
 },)  
@@ -18,12 +17,12 @@ async function callmenu(){
     
 }
 return !menu?<Shimmer/>: (<>
-   
+   <h1>restaurent</h1>
   { menu?.map((e)=><h3>
-  
-    {e.card.info.name}</h3>)}
+  {e.card.info.name}
+    </h3>)}
    
-
+  
    
   </>)
 }

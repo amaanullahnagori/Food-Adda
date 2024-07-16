@@ -23,10 +23,7 @@ const Applayout=()=>{
 const br=createBrowserRouter([{
     path :"/",
     element:<Applayout/>
-},{
-    path :"/res/:i/:id",
-    element:<Menu/>
-}
+},
 , { path :"/res/:id",
 element:<Menu/>}]
 )

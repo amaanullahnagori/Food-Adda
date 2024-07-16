@@ -2998,19 +2998,12 @@ const br = (0, _reactRouterDom.createBrowserRouter)([
             columnNumber: 13
         }, undefined)
     },
-    {
-        path: "/res/:i/:id",
-        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menuDefault.default), {}, void 0, false, {
-            fileName: "index.js",
-            lineNumber: 28,
-            columnNumber: 13
-        }, undefined)
-    },
+    ,
     {
         path: "/res/:id",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _menuDefault.default), {}, void 0, false, {
             fileName: "index.js",
-            lineNumber: 31,
+            lineNumber: 28,
             columnNumber: 9
         }, undefined)
     }
@@ -3020,7 +3013,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: br
 }, void 0, false, {
     fileName: "index.js",
-    lineNumber: 34,
+    lineNumber: 31,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -44993,17 +44986,26 @@ const Menu = ()=>{
     }
     return !menu ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "menu.jsx",
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 14
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: menu?.map((e)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: e.card.info.name
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "restaurent"
             }, void 0, false, {
                 fileName: "menu.jsx",
-                lineNumber: 22,
-                columnNumber: 20
-            }, undefined))
-    }, void 0, false);
+                lineNumber: 20,
+                columnNumber: 4
+            }, undefined),
+            menu?.map((e)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: e.card.info.name
+                }, void 0, false, {
+                    fileName: "menu.jsx",
+                    lineNumber: 21,
+                    columnNumber: 20
+                }, undefined))
+        ]
+    }, void 0, true);
 };
 _s(Menu, "AU5cUn3lvXohijusCRJd1VRQfic=", false, function() {
     return [
